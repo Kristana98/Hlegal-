@@ -1,0 +1,107 @@
+@media screen and (max-width: $sm) {
+  .footer--grid {
+    gap: 21px;
+    grid-template-areas:
+      "adress "
+      "phone"
+      "copyright";
+  }
+
+  .footer-grid {
+    &__adress {
+      flex-direction: column;
+    }
+    &__contact {
+      flex-direction: column;
+    }
+  }
+  .row_2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .point {
+    background-color: #b3b3ba00;
+  }
+  .copyright-txt {
+    text-align: center;
+  }
+
+  .partners__cell {
+    &--color-7 {
+      display: none;
+    }
+    &--color-8 {
+      display: none;
+    }
+    &--color-9 {
+      display: none;
+    }
+    &--color-10 {
+      display: none;
+    }
+    &--color-11 {
+      display: none;
+    }
+    &--color-12 {
+      display: none;
+    }
+  }
+  .container {
+    padding: 0 30px;
+  }
+
+  .logo_h {
+    max-width: 170px;
+  }
+  .partners__box {
+    justify-content: center;
+  }
+  .services_block {
+    padding-top: 30px;
+  }
+
+  .card_1 {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: $sm) {
+  @for $i from 1 through $gd-col {
+    .col-sm-#{$i} {
+      max-width: $gd-size * $i;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .text-center {
+    text-align: end;
+  }
+  @for $i from 1 through $gd-col {
+    .col-md-#{$i} {
+      max-width: $gd-size * $i;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  @for $i from 1 through $gd-col {
+    .col-lg-#{$i} {
+      max-width: $gd-size * $i;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+  }
+}
+@media screen and (min-width: $xl) {
+  .partners__box {
+    padding-bottom: 60px;
+  }
+}

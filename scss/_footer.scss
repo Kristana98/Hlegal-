@@ -1,0 +1,56 @@
+.footer {
+  background-color: $grey-bg;
+  padding-bottom: 30px;
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-box {
+  border-top: 2px solid $grey-separator;
+  padding-top: 30px;
+}
+
+.blue-dark-alt {
+  color: $blue-dark-alt;
+}
+.txt-md {
+  font-size: $txt-md;
+}
+.grey-txt {
+  color: $grey-txt;
+}
+.footer--grid {
+  display: grid;
+  gap: 21px;
+  grid-template-areas:
+    "adress copyright"
+    "phone phone";
+}
+.footer-grid {
+  &__adress {
+    grid-area: adress;
+  }
+
+  &__contact {
+    grid-area: phone;
+  }
+  &__copyright {
+    grid-area: copyright;
+  }
+}
+.copyright-txt {
+  text-align: end;
+}
+.point {
+  height: 6px;
+  width: 6px;
+  background-color: $grey-txt;
+  border-radius: 50%;
+  margin: 0 10px;
+  &__head {
+    margin: 6px 6px;
+  }
+}
